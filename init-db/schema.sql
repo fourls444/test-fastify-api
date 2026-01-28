@@ -9,3 +9,4 @@ CREATE TABLE IF NOT EXISTS products (
 INSERT INTO products (name, price) VALUES ('bomb', 20);
 INSERT INTO products (name, price) VALUES ('car', 100);
 INSERT INTO products (name, price) VALUES ('tank', 250);
+INSERT INTO products (name, price) VALUES ('banana', 900);
