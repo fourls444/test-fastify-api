@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # เปิด Port 3000
-EXPOSE 5000
+EXPOSE 3000
 
 # สั่งรัน server.js
 CMD ["node", "server.js"]

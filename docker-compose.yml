@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "5000:5000"
+      - "3000:3000"
     # ใช้ไฟล์ .env ที่เราเตรียมไว้
     env_file:
       - .env
