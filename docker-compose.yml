@@ -1,18 +1,9 @@
 version: '3.8'
 services:
-  db:
-    image: postgres:15-alpine
-    container_name: fastify_postgres_db
-    restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 015176
-      POSTGRES_DB: db
+  app:
+    build: .
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./init-db:/docker-entrypoint-initdb.d
-
-volumes:
-  postgres_data:
+      - "5000:5000"
+    # ใช้ไฟล์ .env ที่เราเตรียมไว้
+    env_file:
+      - .env
